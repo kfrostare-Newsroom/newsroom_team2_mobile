@@ -33,13 +33,13 @@ const App = props => {
       <IonPage>
         <IonHeader>
           <IonToolbar>
-            <IonTitle align="center"> 
-            <img src={UrbanLiving} style={{ width: '60vw' }} alt='logo' />
+            <IonTitle align="center">
+              <img src={UrbanLiving} style={{ width: '60vw' }} alt='logo' />
             </IonTitle>
           </IonToolbar>
         </IonHeader>
         <IonContent align="center">
-        <ion-text align="center" >Life inspiration for young professionals.</ion-text>
+          <ion-text align="center" >Life inspiration for young professionals.</ion-text>
           {props.state.showArticleList && <ArticleList />}
         </IonContent>
       </IonPage>

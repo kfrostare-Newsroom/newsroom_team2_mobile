@@ -1,6 +1,6 @@
 const initialState = {
-    articleList: [],
-    showArticleList: true
+  articleList: [],
+  showArticleList: true
 }
 
 export default initialState
