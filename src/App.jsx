@@ -1,11 +1,11 @@
 import React from 'react';
-import { Redirect, Route } from 'react-router-dom';
-import { IonApp,
-   IonRouterOutlet,
-   IonTitle,
-   IonHeader,
-   } from '@ionic/react';
-import { IonReactRouter } from '@ionic/react-router';
+import {
+  IonApp,
+  IonTitle,
+  IonHeader,
+  IonPage,
+  IonToolbar
+} from '@ionic/react';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -22,17 +22,20 @@ import '@ionic/react/css/text-alignment.css';
 import '@ionic/react/css/text-transformation.css';
 import '@ionic/react/css/flex-utils.css';
 import '@ionic/react/css/display.css';
+import './Home.css';
 
 /* Theme variables */
 import './theme/variables.css';
 
 const App = () => (
   <IonApp>
-  <IonHeader>
-    <IonTitle>
-      Urban Living
-    </IonTitle>
-  </IonHeader>
+    <IonPage>
+      <IonHeader>
+        <IonToolbar>
+          <IonTitle align="center"> Urban Living </IonTitle>
+        </IonToolbar>
+      </IonHeader>
+    </IonPage>
   </IonApp>
 );
 
