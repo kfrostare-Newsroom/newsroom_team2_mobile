@@ -60,7 +60,7 @@ http://ionicframework.com/docs/theming/ */
     --ion-color-dark-tint: #383a3e;
 
     /** medium **/
-    --ion-color-medium: #f5ebeb;
+    --ion-color-medium: #f1f1f1;
     --ion-color-medium-rgb: 146, 148, 156;
     --ion-color-medium-contrast: #ffffff;
     --ion-color-medium-contrast-rgb: 255, 255, 255;
@@ -125,19 +125,19 @@ http://ionicframework.com/docs/theming/ */
     --ion-color-danger-shade: #e04055;
     --ion-color-danger-tint: #ff5b71;
 
-    --ion-color-dark: #f4f5f8;
+    --ion-color-dark: #0b0b0e;
     --ion-color-dark-rgb: 244, 245, 248;
     --ion-color-dark-contrast: #d7d8da;
     --ion-color-dark-contrast-rgb: 0, 0, 0;
     --ion-color-dark-shade: #d7d8da;
     --ion-color-dark-tint: #f5f6f9;
 
-    --ion-color-medium: #130303;
+    --ion-color-medium: #f5efef;
     --ion-color-medium-rgb: 152, 154, 162;
-    --ion-color-medium-contrast: #000000;
-    --ion-color-medium-contrast-rgb: 0, 0, 0;
-    --ion-color-medium-shade: #86888f;
-    --ion-color-medium-tint: #a2a4ab;
+    --ion-color-medium-contrast: #050505;
+    --ion-color-medium-contrast-rgb: 255, 255, 255;
+    --ion-color-medium-shade: #09090c;
+    --ion-color-medium-tint: #090a0e;
 
     --ion-color-light: #dddddf;
     --ion-color-light-rgb: 34, 36, 40;
