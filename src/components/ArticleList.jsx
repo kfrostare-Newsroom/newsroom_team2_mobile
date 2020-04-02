@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import { connect } from "react-redux";
 import { IonCard, IonButton, IonCardTitle, IonCardSubtitle, IonCardHeader, IonCardContent } from '@ionic/react';
-
-
 class ArticleList extends Component {
   componentDidMount() {
     axios.get("/articles").then(response => {

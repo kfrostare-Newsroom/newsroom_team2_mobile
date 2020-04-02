@@ -26,7 +26,6 @@ import '@ionic/react/css/display.css';
 import './theme/variables.css';
 import ArticleList from "./components/ArticleList";
 
-
 const App = props => {
   return (
     <IonApp>
@@ -52,6 +51,5 @@ const mapStateToProps = state => {
     state: state
   };
 };
-
 
 export default connect(mapStateToProps)(App);
