@@ -28,22 +28,19 @@ import ArticleList from "./components/ArticleList";
 
 const App = props => {
   return (
-  <IonApp>
-    <IonPage>
-
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle align="center"> Urban Living </IonTitle>
-          <IonTitle align="center" size="small" > A source of work / life inspiration for young professionals. </IonTitle>
-        </IonToolbar>
-      </IonHeader>
-
-      <IonContent align="center">
-      {props.state.showArticleList && <ArticleList />}
-      </IonContent>
-
-    </IonPage>
-  </IonApp>
+    <IonApp>
+      <IonPage>
+        <IonHeader>
+          <IonToolbar>
+            <IonTitle align="center"> Urban Living </IonTitle>
+            <IonTitle align="center" size="small" > A source of work / life inspiration for young professionals. </IonTitle>
+          </IonToolbar>
+        </IonHeader>
+        <IonContent align="center">
+          {props.state.showArticleList && <ArticleList />}
+        </IonContent>
+      </IonPage>
+    </IonApp>
   );
 };
 
