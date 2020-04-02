@@ -24,7 +24,6 @@ import '@ionic/react/css/text-alignment.css';
 import '@ionic/react/css/text-transformation.css';
 import '@ionic/react/css/flex-utils.css';
 import '@ionic/react/css/display.css';
-import './Home.css';
 
 /* Theme variables */
 import './theme/variables.css';
@@ -37,11 +36,12 @@ const App = props => {
       <IonHeader>
         <IonToolbar>
           <IonTitle align="center"> Urban Living </IonTitle>
+          <IonTitle align="center" size="small" > A source of work / life inspiration for young professionals. </IonTitle>
         </IonToolbar>
       </IonHeader>
 
-      <IonContent>
-      <text>adasdasd</text>
+      <IonContent align="center">
+      {props.state.showArticleList && <ArticleList />}
       </IonContent>
 
     </IonPage>
