@@ -29,7 +29,8 @@ import './Home.css';
 /* Theme variables */
 import './theme/variables.css';
 
-const App = () => (
+const App = props => {
+  return (
   <IonApp>
     <IonPage>
 
@@ -45,7 +46,8 @@ const App = () => (
 
     </IonPage>
   </IonApp>
-);
+  );
+};
 
 const mapStateToProps = state => {
   return {
