@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from "react-redux";
+import UrbanLiving from "./images/UrbanLiving.png"
 import {
   IonApp,
   IonTitle,
@@ -32,11 +33,13 @@ const App = props => {
       <IonPage>
         <IonHeader>
           <IonToolbar>
-            <IonTitle align="center"> Urban Living </IonTitle>
-            <IonTitle align="center" size="small" > A source of work / life inspiration for young professionals. </IonTitle>
+            <IonTitle align="center"> 
+            <img src={UrbanLiving} style={{ width: '60vw' }} alt='logo' />
+            </IonTitle>
           </IonToolbar>
         </IonHeader>
         <IonContent align="center">
+        <ion-text align="center" >Life inspiration for young professionals.</ion-text>
           {props.state.showArticleList && <ArticleList />}
         </IonContent>
       </IonPage>
