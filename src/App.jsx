@@ -1,10 +1,12 @@
 import React from 'react';
+import { connect } from "react-redux";
 import {
   IonApp,
   IonTitle,
   IonHeader,
   IonPage,
-  IonToolbar
+  IonToolbar,
+  IonContent
 } from '@ionic/react';
 
 /* Core CSS required for Ionic components to work properly */
@@ -30,13 +32,26 @@ import './theme/variables.css';
 const App = () => (
   <IonApp>
     <IonPage>
+
       <IonHeader>
         <IonToolbar>
           <IonTitle align="center"> Urban Living </IonTitle>
         </IonToolbar>
       </IonHeader>
+
+      <IonContent>
+      <text>adasdasd</text>
+      </IonContent>
+
     </IonPage>
   </IonApp>
 );
 
-export default App;
+const mapStateToProps = state => {
+  return {
+    state: state
+  };
+};
+
+
+export default connect(mapStateToProps)(App);
