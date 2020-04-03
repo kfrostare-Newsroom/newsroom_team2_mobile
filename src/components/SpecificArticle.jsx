@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { IonCard , IonButton, IonPage } from '@ionic/react'
+import { IonCard, IonButton, IonPage } from '@ionic/react'
 
 class SpecificArticle extends Component {
   render() {
@@ -10,13 +10,13 @@ class SpecificArticle extends Component {
     }
     return (
       <IonPage full theme={grommet}>
-        <IonCard 
-        direction="row"
-        border={{ color: "brand", size: "small" }}
-        pad="medium"
-        margin="medium"
-        className="article"
-        id={specArticle.id}>
+        <IonCard
+          direction="row"
+          border={{ color: "brand", size: "small" }}
+          pad="medium"
+          margin="medium"
+          className="article"
+          id={specArticle.id}>
           <div>
             <div className="spec-title">
               <h2>{specArticle.title}</h2>
@@ -29,11 +29,11 @@ class SpecificArticle extends Component {
             </div>
           </div>
         </IonCard>
-          <IonButton 
-            type="submit"
-            label="Back"
-            onClick={() => this.props.dispatch({type: "HIDE_ARTICLE"})}>
-          </IonButton>
+        <IonButton
+          type="submit"
+          label="Back"
+          onClick={() => this.props.dispatch({ type: "HIDE_ARTICLE" })}>
+        </IonButton>
       </IonPage>
     );
   }
