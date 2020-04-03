@@ -25,6 +25,7 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 import ArticleList from "./components/ArticleList";
+import SpecificArticle from "./components/SpecificArticle";
 
 const App = props => {
   return (
@@ -40,6 +41,7 @@ const App = props => {
         <IonContent align="center">
           <ion-text align="center" >Life inspiration for young professionals.</ion-text>
           {props.state.showArticleList && <ArticleList />}
+          {props.state.readArticle && <SpecificArticle />}
         </IonContent>
       </IonPage>
     </IonApp>
