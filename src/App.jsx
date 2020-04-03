@@ -39,7 +39,7 @@ const App = props => {
         </IonHeader>
         <IonContent align="center">
           <ion-text align="center" >Life inspiration for young professionals.</ion-text>
-          {props.state.showArticleList && <ArticleList />}
+          {props.state.showArticleList && <ArticleList />}        
         </IonContent>
       </IonPage>
     </IonApp>
