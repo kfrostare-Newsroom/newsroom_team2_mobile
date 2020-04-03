@@ -27,7 +27,6 @@ import './theme/variables.css';
 import ArticleList from "./components/ArticleList";
 import SpecificArticle from "./components/SpecificArticle";
 
-
 const App = props => {
   return (
     <IonApp>
