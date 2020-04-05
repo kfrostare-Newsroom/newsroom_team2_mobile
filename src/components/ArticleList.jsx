@@ -13,7 +13,7 @@ class ArticleList extends Component {
     axios.get("/articles").then(response => {
       this.props.dispatch({
         type: "ARTICLES",
-        payload: { articleList: response.data.articles }
+        payload: { articleList: response.data }
       });
     });
   }
@@ -37,6 +37,7 @@ class ArticleList extends Component {
               <div className="feature-article">
                 <div className="article-headline">
                   <IonCardHeader>
+                   <img src={article.image} />
                     <IonCardTitle>{article.title}</IonCardTitle>
                   </IonCardHeader>
                   <IonCardContent className="article-teaser">{article.teaser}   </IonCardContent>
