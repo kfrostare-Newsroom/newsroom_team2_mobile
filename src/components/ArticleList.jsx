@@ -37,7 +37,7 @@ class ArticleList extends Component {
               <div className="feature-article">
                 <div className="article-headline">
                   <IonCardHeader>
-                   <img src={article.image} />
+                    <img src={article.image} />
                     <IonCardTitle>{article.title}</IonCardTitle>
                   </IonCardHeader>
                   <IonCardContent className="article-teaser">{article.teaser}   </IonCardContent>

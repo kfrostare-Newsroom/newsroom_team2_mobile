@@ -4,11 +4,11 @@ import { IonCard, IonButton, IonCardTitle, IonCardContent, IonCardSubtitle, IonC
 
 class SpecificArticle extends Component {
   componentDidMount() {
-     if (this.props.currentUser === "subscriber") {
-       this.props.dispatch({ type: "PREMIUM", payload: {premiumUser: true } });
-     } else {
-      this.props.dispatch({ type: "PREMIUM", payload: {premiumUser: false } })
-     }      
+    if (this.props.currentUser === "subscriber") {
+      this.props.dispatch({ type: "PREMIUM", payload: { premiumUser: true } });
+    } else {
+      this.props.dispatch({ type: "PREMIUM", payload: { premiumUser: false } })
+    }
   }
 
   render() {
@@ -45,17 +45,17 @@ class SpecificArticle extends Component {
       ) : (
           <>
             <IonCardContent className="spec-content restricted">
-            {articleContent}
-          </IonCardContent>
+              {articleContent}
+            </IonCardContent>
             <p>
               This article require a premium membership.{" "}
               <IonButton
-              onClick={() =>
-              this.props.dispatch({
-                type: "PAYMENT_FORM",
-                payload: {showPaymentForm: true}
-              })
-              }
+                onClick={() =>
+                  this.props.dispatch({
+                    type: "PAYMENT_FORM",
+                    payload: { showPaymentForm: true }
+                  })
+                }
               > Buy Subscription </IonButton>
             </p>
           </>
@@ -68,7 +68,7 @@ class SpecificArticle extends Component {
         id={specArticle.id}>
         <div>
           <IonCardHeader>
-          <img src={specArticle.image} />
+            <img src={specArticle.image} />
             <IonCardTitle className="spec-title">
               {specArticle.title}
             </IonCardTitle>
