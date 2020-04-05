@@ -60,12 +60,12 @@ http://ionicframework.com/docs/theming/ */
     --ion-color-dark-tint: #383a3e;
 
     /** medium **/
-    --ion-color-medium: #f1f1f1;
-    --ion-color-medium-rgb: 146, 148, 156;
-    --ion-color-medium-contrast: #ffffff;
+    --ion-color-medium: #f5efef;
+    --ion-color-medium-rgb: 152, 154, 162;
+    --ion-color-medium-contrast: #050505;
     --ion-color-medium-contrast-rgb: 255, 255, 255;
-    --ion-color-medium-shade: #808289;
-    --ion-color-medium-tint: #9d9fa6;
+    --ion-color-medium-shade: #09090c;
+    --ion-color-medium-tint: #090a0e;
 
     /** light **/
     --ion-color-light: #ffffff;
