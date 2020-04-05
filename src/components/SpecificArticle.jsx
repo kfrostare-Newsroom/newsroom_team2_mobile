@@ -19,7 +19,6 @@ class SpecificArticle extends Component {
 
     if (this.props.readArticle) {
       specArticle = this.props.readArticle;
-
       if (
         (specArticle.article_class === "premium") &
         (this.props.premiumUser === false)
@@ -38,9 +37,9 @@ class SpecificArticle extends Component {
           <IonCardContent className="spec-content">
             {articleContent}
           </IonCardContent>
-          <div className="created-date">
+          <IonCardSubtitle className="created-date">
             <p>Submitted on {specArticle.new_created_at}</p>
-          </div>
+          </IonCardSubtitle>
         </>
       ) : (
           <>
@@ -58,6 +57,9 @@ class SpecificArticle extends Component {
                 }
               > Buy Subscription </IonButton>
             </p>
+            <IonCardSubtitle className="created-date">
+              <p>Submitted on {specArticle.new_created_at}</p>
+            </IonCardSubtitle>
           </>
         );
 
@@ -77,9 +79,6 @@ class SpecificArticle extends Component {
             {showContent}
           </IonCardContent>
         </div>
-        <IonCardSubtitle className="created-date">
-          <p>Submitted on {specArticle.new_created_at}</p>
-        </IonCardSubtitle>
         <IonButton
           fill="outline"
           color="dark"
